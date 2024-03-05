@@ -1,0 +1,49 @@
+input[type=search]
+{
+    width:450px;
+    background-image: url('images/search.jfif');
+    background-repeat: no-repeat;
+    background-position: 420px;
+}
+a:link,a:visited
+{
+  text-decoration: none;
+  color: black;
+}
+.list-group-item
+{
+  border:none;
+}
+.multi li
+{
+    position: relative;
+}
+.multi .submenu
+{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 70%;
+}
+.multi>li:hover>.submenu
+{
+    display: block;
+}
+.card:hover
+{
+  border-color: green;
+  color: green;
+}
+.tbox
+{
+height: 60px;
+width: 65px;
+border: solid 1px lightgray;
+border-radius: 5px;
+text-align: center;
+margin: auto;
+}
+.accordion-button
+{
+  height: 35px;
+}

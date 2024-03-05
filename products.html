@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - eCommerce HTML Template</title>
+    <link rel="shortcut icon" href="images/freshcart.ico" type="image/ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bb674ddf93.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="freshcart.css"> 
+</head>
+<body>
+    <div class="d-flex flex-row bd-highlight mb-3 bg-light sticky-top">
+        <div class="p-2 bd-highlight flex-grow-1"><h5 class="text-muted">Super Value Deals-Save more with coupons</h5></div>
+        <div class="p-2 bd-highlight"><div class="dropdown">
+            <button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/en.png" height="20" width="20"><span class="text-muted"> English</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><img src="images/fr.png" height="20" width="20"> <span class="text-muted"> Francais</span></a></li>
+              <li><a class="dropdown-item" href="#"><img src="images/de.png" height="20" width="20"> <span class="text-muted"> Deutsch</span></a></li>
+            </ul>
+          </div></div>
+      </div>
+      <!-- navbar -->
+      <div class="container">
+        <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+          <div class="p-2 bd-highlight"><img src="images/freshcart-logo.svg"></div>
+          <div class="p-2 bd-highlight"> <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-light text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  </svg> Location
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Choose your Delivery Location</h5>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body 1">
+        <p class="text-muted">Enter your address and we will specify the offer you area.</p>
+        <input class="form-control" type="search" placeholder="Search your area" aria-label="Search your area">
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight flex-grow-1"><h6>Select Location</h6></div>
+          <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-light text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">Clear All</button></div>
+          
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active border-bottom" aria-current="true">
+            Alabama                 Min:$20
+          </a>
+          <a href="#" class="list-group-item list-group-item-action border-bottom"> Alaska                 Min:$30</a>
+          <a href="#" class="list-group-item list-group-item-action border-bottom"> Arizona                 Min:$50</a>
+          <a href="#" class="list-group-item list-group-item-action border-bottom"> California                 Min:$29</a>
+          <a href="#" class="list-group-item list-group-item-action border-bottom"> Colorado                 Min:$80</a>
+          <a href="#" class="list-group-item list-group-item-action border-bottom"> Florida                 Min:$90</a>
+         
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
+          </form></div>
+          <div class="p-2 bd-highlight"><a href="wishlist.html"><button type="button" class="btn btn-white position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+              <span class="visually text-white">5</span>
+            </span>
+          </button> </a><!-- Button trigger modal -->
+          <button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlText1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlText1" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Address">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter password">
+                  </div>
+                  <h6>By Signup, you agree to our <a href="#" class="text-success">Terms of Service</a> & <a href="#" class="text-success">Privacy Policy</a></h6><br>
+                  <button type="button" class="btn btn-success col-md-12">Sign Up</button><br><br>
+                  <h6 align="center">Already have an account? <a href="#" class="text-success">Sign in</a></h6>
+                </div>
+                <div class="modal-footer">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div> 
+          <button class="btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg><span>0</span></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div></div>
+        </div>
+      </div>
+      <!-- All Departments lists -->
+      <div class="container">
+      <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+        <div class="p-2 bd-highlight"><div class="dropdown">
+          <button class="btn btn-success text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+              <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
+            </svg> All Departments
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Dairy, Bread & Eggs</a></li>
+            <li><a class="dropdown-item" href="#">Snacks & Munchies</a></li>
+            <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+            <li><a class="dropdown-item" href="#">Cold drinks & Juices</a></li>
+            <li><a class="dropdown-item" href="#">Breakfast & Instant Food</a></li>
+            <li><a class="dropdown-item" href="#">Bakery & Buiscuits</a></li>
+            <li><a class="dropdown-item" href="#">Chicken, Meat & Fish</a></li>
+          </ul>
+        </div></div>
+        <div class="p-2 bd-highlight"><div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Home
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Home 1</a></li>
+            <li><a class="dropdown-item" href="#">Home 2</a></li>
+            <li><a class="dropdown-item" href="#">Home 3</a></li>
+          </ul>
+        </div></div>
+        <div class="p-2 bd-highlight"><div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Shop grid-Filter</a></li>
+            <li><a class="dropdown-item" href="#">Shop grid-3 column</a></li>
+            <li><a class="dropdown-item" href="#">Shop list-Filter</a></li>
+            <li><a class="dropdown-item" href="#">Shop Filter</a></li>
+            <li><a class="dropdown-item" href="#">Shop Wide</a></li>
+            <li><a class="dropdown-item" href="#">Shop Single</a></li>
+            <li><a class="dropdown-item" href="#">Shop Wishlist</a></li>
+            <li><a class="dropdown-item" href="#">Shop Cart</a></li>
+            <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+          </ul>
+        </div></div>
+        <div class="p-2 bd-highlight"><div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Stores
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Store list</a></li>
+            <li><a class="dropdown-item" href="#">Store grid</a></li>
+            <li><a class="dropdown-item" href="#">Store Single</a></li>
+            
+          </ul>
+        </div></div>
+        <div class="p-2 bd-highlight">
+          <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Mega menu</button>
+
+<div class="offcanvas offcanvas-top" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="width: 100%;height:70%;margin-top:200px;">
+  <div class="offcanvas-header">
+    
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+      <div class="p-2 bd-highlight">
+        <h6 class="text-success">Dairy, Bread & Eggs</h6>
+        <ul class="list-group">
+          <a href="#"><li class="list-group-item">Butter</li></a>
+          <a href="#"><li class="list-group-item">Milk Drinks</li></a>
+          <a href="#"><li class="list-group-item">Curd & Yogurt</li></a>
+          <a href="#"><li class="list-group-item">Eggs</li></a>
+          <a href="#"><li class="list-group-item">Buns & Bakery</li></a>
+          <a href="#"><li class="list-group-item">Cheese</li></a>
+          <a href="#"><li class="list-group-item">Condensed Milk</li></a>
+          <a href="#"><li class="list-group-item">Dairy Products</li></a>
+        </ul>
+      </div>
+      <div class="p-2 bd-highlight"><h6 class="text-success">Breakfast & Instant Food</h6>
+        <ul class="list-group">
+          <a href="#"><li class="list-group-item">Breakfast cereal</li></a>
+          <a href="#"><li class="list-group-item">Noodles, Pasta & Soup</li></a>
+          <a href="#"><li class="list-group-item">Frozen veg snacks</li></a>
+          <a href="#"><li class="list-group-item">Frozen non-veg snacks</li></a>
+          <a href="#"><li class="list-group-item">Vermicelli</li></a>
+          <a href="#"><li class="list-group-item">Instant Mixes</li></a>
+          <a href="#"><li class="list-group-item">Batter</li></a>
+          <a href="#"><li class="list-group-item">Fruit & Juices</li></a>
+        </ul></div>
+      <div class="p-2 bd-highlight"><h6 class="text-success">Cold Drinks & Juices</h6>
+        <ul class="list-group">
+          <a href="#"><li class="list-group-item">Soft Drinks</li></a>
+          <a href="#"><li class="list-group-item">Fruit Juices</li></a>
+          <a href="#"><li class="list-group-item">Curd & Yogurt</li></a>
+          <a href="#"><li class="list-group-item">Eggs</li></a>
+          <a href="#"><li class="list-group-item">Buns & Bakery</li></a>
+          <a href="#"><li class="list-group-item">Cheese</li></a>
+          <a href="#"><li class="list-group-item">Coldpress</li></a>
+          <a href="#"><li class="list-group-item">Water & Ice cubes</li></a>
+          <a href="#"><li class="list-group-item">Soda & Mixtures</li></a>
+          <a href="#"><li class="list-group-item">Health Drinks</li></a>
+          <a href="#"><li class="list-group-item">Herbal Drinks</li></a>
+          <a href="#"><li class="list-group-item">Milk Drinks</li></a>
+        </ul></div>
+      <div class="p-2 bd-highlight">
+        <div class="position-relative">
+          <img src="images/menu-banner.jpg">
+          <div class="position-absolute top-0 start-0 p-3"><h5>Don't Miss this<br>Offer today</h5><button type="button" class="btn btn-success">Shop now</button></div>
+          </div></div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="p-2 bd-highlight"><div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><a class="dropdown-item" href="#">Blog Single</a></li>
+            <li><a class="dropdown-item" href="#">Blog Category</a></li>
+            <li><a class="dropdown-item" href="#">About us</a></li>
+            <li><a class="dropdown-item" href="#">404 Error</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+        </div></div>
+        <div class="p-2 bd-highlight">
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account
+          </a>
+          <ul class="multi dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Sign in</a></li>
+            <li><a class="dropdown-item" href="#">Sign up</a></li>
+            <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+            <li><a class="dropdown-item" href="#">My Account &raquo;</a>
+          <ul class="multi dropdown-menu submenu">
+              <li><a class="dropdown-item" href="#">Orders</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Address</a></li>
+            <li><a class="dropdown-item" href="#">Payment Method</a></li>
+            <li><a class="dropdown-item" href="#">Notification</a></li>
+            
+          </ul>
+          </li>
+          </ul>
+          </div>
+          <button class="btn btn-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Docs
+          </button>
+        </div></div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb -->
+    <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" class="text-success">Home</a></li>
+          <li class="breadcrumb-item"><a href="#" class="text-success">Shop</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Snacks & Munchies</li>
+        </ol>
+      </nav>
+    </div><br>
+    <!-- Categories -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+              <h4>Categories</h4>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Dairy, Bread & Eggs
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <a href="#">Milk</a><br>
+                      <a href="#">Milk Drinks</a><br>
+                      <a href="#">Curd & Yogurt</a><br>
+                      <a href="#">Eggs</a><br>
+                      <a href="#">Bread</a><br>
+                      <a href="#">Buns & Bakery</a><br>
+                      <a href="#">Butter & More</a><br>
+                      <a href="#">Cheese</a><br>
+                      <a href="#">Paneer & Tofu</a><br>
+                      <a href="#">Cream & Whitener</a><br>
+                      <a href="#">Condensed Milk</a><br>
+                      <a href="#">Vegan Drinks</a><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Snacks & Munchies
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <a href="#">Chips & Crisps</a><br>
+                      <a href="#">Nachos</a><br>
+                      <a href="#">Popcorn</a><br>
+                      <a href="#">Bhujiya & Mixtures</a><br>
+                      <a href="#">Numkeen Snacks</a><br>
+                      <a href="#">Healthy Snacks</a><br>
+                      <a href="#">Cakes & Rolls</a><br>
+                      <a href="#">Energy Bars</a><br>
+                      <a href="#">Papad & Fryums</a><br>
+                      <a href="#">Rusks & Wafers</a><br>
+                     </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Fruits & Vegetables
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <a href="#">Fresh Vegetables</a><br>
+                      <a href="#">Herbs & Seasonings</a><br>
+                      <a href="#">Fresh Fruits</a><br>
+                      <a href="#">Organic Fruits & Vegetables</a><br>
+                      <a href="#">Cuts & Sprouts</a><br>
+                      <a href="#">Exotic Fruits & Vegies</a><br>
+                      <a href="#">Flower Bucquetes, Bunches</a><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Cold Drinks & Juices
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="#">Soft Drinks</a><br>
+                    <a href="#">Fruit Juices</a><br>
+                    <a href="#">Coldpress</a><br>
+                    <a href="#">Energy Drinks</a><br>
+                    <a href="#">Water & Ice Cubes</a><br>
+                    <a href="#">Soda & Mixers</a><br>
+                    <a href="#">Concentrates & Syrups</a><br>
+                    <a href="#">Detox & Energy Drinks</a><br>
+                    <a href="#">Juice Collection</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Breakfast & Instant Food
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="#">Batter</a><br>
+                    <a href="#">Breakfast Cereal</a><br>
+                    <a href="#">Noodles, Pasta & Soup</a><br>
+                    <a href="#">Frozen Non-veg Snacks</a><br>
+                    <a href="#">Frozen veg</a><br>
+                    <a href="#">Vermicelli</a><br>
+                    <a href="#">Instant Mixes</a><br>                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Cold Drinks & Juices
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="#">Cookies</a><br>
+                    <a href="#">Glucose & Marie</a><br>
+                    <a href="#">Sweet & Salty</a><br>
+                    <a href="#">Healthy & Digestive</a><br>
+                    <a href="#">Cream Buiscuits</a><br>
+                    <a href="#">Rusks & Wafers</a><br>
+                    <a href="#">Cakes & Rolls</a><br>
+                    <a href="#">Buns & Bakery</a><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Chicken, Meat & Fish
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="#">Chicken</a><br>
+                    <a href="#">Sausage, Salami & Ham</a><br>
+                    <a href="#">Exotic Meat</a><br>
+                    <a href="#">Eggs</a><br>
+                    <a href="#">Frozen Non-veg Snacks</a><br>                                       
+                  </div>
+                </div>
+              </div><br><br>
+            
+            <h4>Stores</h4>
+            <input type="search" placeholder="Search by store" style="width:250px;height:40px;border:2px green solid;border-radius:5px;margin-left:20px;"><br>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label text-muted" for="flexCheckChecked">
+                E-Grocery
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                DealShare
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                DMart
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                Blinkit
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                BigBasket
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                StoreFront
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                Spencers
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-muted" for="flexCheckDefault">
+                Online Grocery
+              </label>
+            </div><br>
+            <h4>Price</h4>
+            <p class="text-muted">Price $49-$199</p> <br>
+            <h4>Rating</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i>
+              </label>
+            </div>  <br><br>                     
+            
+            <div class="position-relative">
+              <img src="images/assortment-citrus-fruits.png" height="300" width="250">
+              <div class="position-absolute top-0 start-0">
+                <h4 class="">Fresh Fruits</h4>
+                <p class="text-muted">Get upto 25% off</p>
+                <button type="button" class="btn btn-dark">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div> 
+            </div> 
+           <div class="col-9">
+            <h1 class="bg-light p-4" style="height:100px;">Snacks & Munchies</h1>
+            <div class="d-flex flex-row bd-highlight mb-3 justify-content-evenly">
+              <div class="p-2 bd-highlight flex-grow-1"><p class="d-inline">24</p> <p class="text-muted d-inline">Products found</p></div>
+              <div class="p-2 bd-highlight"><i class="fa-solid fa-list"></i>&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              </svg>&nbsp;&nbsp;  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
+              </svg> </div>
+              <div class="bd-highlight"><div class="dropdown">
+                <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Show: 50
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Show: 50</a></li>
+                  <li><a class="dropdown-item" href="#">10</a></li>
+                  <li><a class="dropdown-item" href="#">20</a></li>
+                  <li><a class="dropdown-item" href="#">30</a></li>
+                </ul>
+              </div></div>
+              <div class="bd-highlight"><div class="dropdown">
+                <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort by:Featured
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Sort by:Featured</a></li>
+                  <li><a class="dropdown-item" href="#">Price:Low to High</a></li>
+                  <li><a class="dropdown-item" href="#">Price:High to Low</a></li>
+                  <li><a class="dropdown-item" href="#">Release Date</a></li>
+                  <li><a class="dropdown-item" href="#">Avg. Rating</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+     <!-- card group -->
+     <div class="row row-cols-1 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card shadow">
+          
+          <div class="card-body">
+            <img src="images/1.jpg" height="140" width="140">
+            <div class="d-flex justify-content-center d-none">
+              <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+              </svg></div>
+              <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+              <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+            </div>
+            
+            <p class="card-text text-muted">Snack & Munchies</p>
+            <a href="#"><p style="font-size:15px;">Haldiram's SevBhujiya</p></a><br>
+            <div class="d-flex" style="font-size:12px;">
+            <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+            <p class="text-muted">4.5(149)</p>         
+            </div>
+            <div class="d-flex" style="font-size:12px;">
+              <p>$18</p><p class="text-muted flex-grow-1">$24</p> 
+              <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+            </div>
+          </div>
+          </div>
+        </div>
+      
+      <div class="col">
+        <div class="card shadow">
+          
+          <div class="card-body">
+            <img src="images/2.jpg" height="140" width="140">
+          <div class="d-flex justify-content-center d-none">
+            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg></div>
+            <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+            <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+          </div>
+          
+          <p class="card-text text-muted">Bakery & Buiscuits</p>
+          <a href="#"><p style="font-size:15px;">NutriChoice Digestive</p></a><br>
+          <div class="d-flex" style="font-size:12px;">
+          <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+          <p class="text-muted">4.5(25)</p>         
+          </div>
+          <div class="d-flex" style="font-size:12px;">
+            <p>$24</p><p class="text-muted flex-grow-1"></p> 
+            <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+          </div>
+        </div>
+          </div>
+        </div>
+   
+            <div class="col">
+        <div class="card shadow">
+         
+          <div class="card-body">
+            <img src="images/3.jpg" height="140" width="140">
+          <div class="d-flex justify-content-center d-none">
+            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg></div>
+            <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+            <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+          </div>
+          
+          <p class="card-text text-muted">Bakery & Buiscuits</p>
+          <a href="#"><p style="font-size:15px;">Cadbury 5Star Chocolate</p></a>
+          <div class="d-flex" style="font-size:12px;">
+          <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+          <p class="text-muted">5(469)</p>         
+          </div>
+          <div class="d-flex" style="font-size:12px;">
+            <p>$32</p><p class="text-muted flex-grow-1">$35</p> 
+            <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+          </div>
+        </div>
+ 
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            
+            <div class="card-body">
+              <img src="images/4.jpg" height="140" width="140">
+            <div class="d-flex justify-content-center d-none">
+              <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+              </svg></div>
+              <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+              <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+            </div>
+            
+            <p class="card-text text-muted">Snacks & Munchies </p>
+            <a href="#"><p style="font-size:15px;">Onion Flavour Potato</p></a><br>
+            <div class="d-flex" style="font-size:12px;"> 
+            <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+            <p class="text-muted">3.5(456)</p>         
+            </div>
+            <div class="d-flex" style="font-size:12px;">
+              <p>$3</p><p class="text-muted flex-grow-1">$5</p> 
+              <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+            </div>
+          </div>
+   
+            </div>
+          </div>
+        </div><br><br>
+        <!-- 2nd card group -->
+          <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card shadow">
+                
+                <div class="card-body">
+                  <img src="images/5.jpg" height="140" width="140">
+                  <div class="d-flex justify-content-center d-none">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg></div>
+                    <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                    <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                  </div>
+                  
+                  <p class="card-text text-muted">Instant Food</p>
+                  <a href="#"><p style="font-size:15px;">Salted Instant Popcorn</p></a><br>
+                  <div class="d-flex" style="font-size:12px;">
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <p class="text-muted">4.5(39)</p>         
+                  </div>
+                  <div class="d-flex" style="font-size:12px;">
+                    <p>$13</p><p class="text-muted flex-grow-1">$18</p> 
+                    <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                  </div>
+                </div>
+                </div>
+              </div>
+            
+            <div class="col">
+              <div class="card shadow">
+                
+                <div class="card-body">
+                  <img src="images/6.jpg" height="140" width="140">
+                <div class="d-flex justify-content-center d-none">
+                  <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                  </svg></div>
+                  <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                  <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                </div>
+                
+                <p class="card-text text-muted">Dairy, Bread & Eggs</p>
+                <a href="#"><p style="font-size:15px;">Blueberry Greek Yogurt</p></a><br>
+                <div class="d-flex" style="font-size:12px;">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <p class="text-muted">4.5(189)</p>         
+                </div>
+                <div class="d-flex" style="font-size:12px;">
+                  <p>$18</p><p class="text-muted flex-grow-1">$24</p> 
+                  <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                </div>
+              </div>
+                </div>
+              </div>
+         
+                  <div class="col">
+              <div class="card shadow">
+               
+                <div class="card-body">
+                  <img src="images/7.jpg" height="140" width="140">
+                <div class="d-flex justify-content-center d-none">
+                  <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                  </svg></div>
+                  <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                  <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                </div>
+                
+                <p class="card-text text-muted">Dairy, Bread & Eggs</p>
+                <a href="#"><p style="font-size:15px;">Britannia Cheese Slices</p></a><br>
+                <div class="d-flex" style="font-size:12px;">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <p class="text-muted">5(345)</p>         
+                </div>
+                <div class="d-flex" style="font-size:12px;">
+                  <p>$24</p><p class="text-muted flex-grow-1"></p> 
+                  <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                </div>
+              </div>
+       
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow">
+                  
+                  <div class="card-body">
+                    <img src="images/8.jpg" height="140" width="140">
+                  <div class="d-flex justify-content-center d-none">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg></div>
+                    <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                    <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                  </div>
+                  
+                  <p class="card-text text-muted">Instant Food</p>
+                  <a href="#"><p style="font-size:15px;">Kellogg's Original Cereals</p></a>
+                  <div class="d-flex" style="font-size:12px;"> 
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <p class="text-muted">4(90)</p>         
+                  </div>
+                  <div class="d-flex" style="font-size:12px;">
+                    <p>$32</p><p class="text-muted flex-grow-1">$35</p> 
+                    <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                  </div>
+                </div>
+         
+                  </div>
+                </div>
+          </div><br><br>
+          <!-- card 3rd group -->
+                <div class="row row-cols-1 row-cols-lg-4 g-4">
+                  <div class="col">
+                    <div class="card shadow">
+                      
+                      <div class="card-body">
+                        <img src="images/9.jpg" height="140" width="140">
+                        <div class="d-flex justify-content-center d-none">
+                          <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                          </svg></div>
+                          <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                          <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                        </div>
+                        
+                        <p class="card-text text-muted">Snack & Munchies</p>
+                        <a href="#"><p style="font-size:15px;">Slurrp Millet Chocolate</p></a>
+                        <div class="d-flex" style="font-size:12px;">
+                        <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                        <p class="text-muted">4.5(67)</p>         
+                        </div>
+                        <div class="d-flex" style="font-size:12px;">
+                          <p>$3</p><p class="text-muted flex-grow-1">$5</p> 
+                          <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    
+                      <div class="col">
+                        <div class="card shadow">
+                          
+                          <div class="card-body">
+                            <img src="images/10.jpg" height="140" width="140">
+                            <div class="d-flex justify-content-center d-none">
+                              <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg></div>
+                              <div class="p-2"><i class="fa-regular fa-heart"></i></div>
+                              <div class="p-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            </div>
+                            
+                            <p class="card-text text-muted">Dairy, Bread & Eggs</p>
+                            <a href="#"><p style="font-size:15px;">Amul Butter - 500g</p></a>
+                            <div class="d-flex" style="font-size:12px;">
+                            <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            <p class="text-muted">3.5(89)</p>         
+                            </div>
+                            <div class="d-flex" style="font-size:12px;">
+                              <p>$13</p><p class="text-muted flex-grow-1">$18</p> 
+                              <button type="button" class="btn btn-sm btn-success">+ Add</button>        
+                            </div>
+                          </div>
+                          </div>
+                          
+                        </div>
+    </div><br><br>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&lt;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">--</a></li>
+        <li class="page-item"><a class="page-link" href="#">12</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&gt;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+            
+           </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        </div> 
+         </div><br><br>
+         <!-- Footer2 -->
+<div class="container">
+  <div class="d-flex flex-row bd-highlight bg-light justify-content-evenly border-bottom">
+    <div class="p-2 bd-highlight">
+      <h6>Catogories</h6>
+      <a href="#" class="text-muted">Vegetables & Fruits</a><br>
+      <a href="#" class="text-muted">Breakfast & Instant Food</a><br>
+      <a href="#" class="text-muted">Bakery & Biscuits</a><br>
+      <a href="#" class="text-muted">Atta, Rice & Dal</a><br>
+      <a href="#" class="text-muted">Sauces & Spreads</a><br>
+      <a href="#" class="text-muted">Organic & Gourmet</a><br>
+      <a href="#" class="text-muted">Baby Care</a><br>
+      <a href="#" class="text-muted">Cleaning Essentials</a><br>
+      <a href="#" class="text-muted">Personal Care</a><br>
+    </div>
+    <div class="p-2 bd-highlight"><h6></h6>
+      <a href="#" class="text-muted">Dairy, Bread & Eggs</a><br>
+      <a href="#" class="text-muted">Cold drinks & juices</a><br>
+      <a href="#" class="text-muted">Tea, Coffee & Drinks</a><br>
+      <a href="#" class="text-muted">Masala, Oil & More</a><br>
+      <a href="#" class="text-muted">Chicken, Meat & Fish</a><br>
+      <a href="#" class="text-muted">Pan corner</a><br>
+      <a href="#" class="text-muted">Pharma & Wellness</a><br>
+      <a href="#" class="text-muted">Home & Office</a><br>
+      <a href="#" class="text-muted">Pet Care</a><br>
+    </div>
+    <div class="p-2 bd-highlight">
+      <h6>Get to know us</h6>
+      <a href="#" class="text-muted">Company</a><br>
+      <a href="#" class="text-muted">About</a><br>
+      <a href="#" class="text-muted">Blog</a><br>
+      <a href="#" class="text-muted">Help Center</a><br>
+      <a href="#" class="text-muted">Our Value</a><br>    
+    </div>
+    <div class="p-2 bd-highlight">
+      <h6>For Consumers</h6>
+      <a href="#" class="text-muted">Payments</a><br>
+      <a href="#" class="text-muted">Shipping</a><br>
+      <a href="#" class="text-muted">Product Returns</a><br>
+      <a href="#" class="text-muted">FAQ</a><br>
+      <a href="#" class="text-muted">Shop Checkout</a><br> 
+    </div>
+    <div class="p-2 bd-highlight">
+      <h6>Become a Shopper</h6>
+      <a href="#" class="text-muted">Shopper Opportunities</a><br>
+      <a href="#" class="text-muted">Become a Shopper</a><br>
+      <a href="#" class="text-muted">Earnings</a><br>
+      <a href="#" class="text-muted">Ideas & Guides</a><br>
+      <a href="#" class="text-muted">New Retailers</a><br> 
+    </div>
+    <div class="p-2 bd-highlight">
+      <h6>Freshcart Programs</h6>
+      <a href="#" class="text-muted">Freshcart Programs</a><br>
+      <a href="#" class="text-muted">Gift cards</a><br>
+      <a href="#" class="text-muted">Promos & Coupons</a><br>
+      <a href="#" class="text-muted">Freshcart adds</a><br>
+      <a href="#" class="text-muted">Careers</a><br> 
+    </div>
+  </div>
+  <div class="d-flex flex-row bd-highlight justify-content-evenly bg-light border-bottom">
+    <div class="p-2 bd-highlight flex-grow-1">
+      Payment Partners
+    <img src="images/amazonpay.svg">
+    <img src="images/american-express.svg">
+    <img src="images/mastercard.svg">
+    <img src="images/paypal.svg">
+    <img src="images/visa.svg">
+    </div>
+    <div class="p-2 bd-highlight"><p>Get deliveries with FreshCart </p></div>
+    <div class="p-2 bd-highlight"><img src="images/appstore-btn.svg" class="img-fluid"></div>
+    <div class="p-2 bd-highlight"><img src="images/googleplay-btn.svg" class="img-fluid"></div>
+  </div>
+  <div class="d-flex flex-row bd-highlight justify-content-evenly bg-light">
+    <div class="p-2 bd-highlight flex-grow-1"><h6 class="text-muted">Copyright 2022 &copy; FreshCart eCommerce HTML Template. All rights reserved. Powered by <br><a href="#" class="text-muted">Codescandy.</a></h6></div>
+    <div class="p-2 bd-highlight">Follow us on
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg>
+    </div>
+   
+  </div>
+  </div>
+    
+</body>
+</html>
